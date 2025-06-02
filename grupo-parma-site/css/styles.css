@@ -1144,3 +1144,30 @@ body.light-mode .tooltip .tooltip-content {
   color: #000;
   border: 1px solid #aaa;
 }
+
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-content {
+            visibility: hidden;
+            width: 200px;
+            background-color: #eee;
+            color: #000;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 120%;
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip:hover .tooltip-content {
+            visibility: visible;
+        }
+    </style>
