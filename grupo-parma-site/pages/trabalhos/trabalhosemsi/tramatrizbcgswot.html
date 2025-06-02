@@ -2,207 +2,183 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Parma - Matriz BCG e Análise SWOT</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <!-- Fontes Google - Playfair Display para títulos e Inter para textos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <style>
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Parma - Matriz BCG e Análise SWOT</title>
+  <link rel="stylesheet" href="../../../css/styles.css" />
 
-        .tooltip .tooltip-content {
-            visibility: hidden;
-            width: 200px;
-            background-color: #eee;
-            color: #000;
-            text-align: left;
-            border-radius: 6px;
-            padding: 10px;
-            position: absolute;
-            z-index: 1;
-            top: 120%;
-            left: 0;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
+  <!-- Fontes Google - Playfair Display para títulos e Inter para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
-        .tooltip:hover .tooltip-content {
-            visibility: visible;
-        }
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-        /* Estilo para modo escuro */
-body.dark-mode .popup,
-body.dark-mode .tooltip .tooltip-content {
-  background-color: #222;
-  color: #eee;
-  border: 1px solid #555;
-}
+  <style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
 
-/* Modo claro opcional (se quiser explícito) */
-body.light-mode .popup,
-body.light-mode .tooltip .tooltip-content {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #aaa;
-}
+    .tooltip .tooltip-content {
+      visibility: hidden;
+      width: 200px;
+      background-color: #eee;
+      color: #000;
+      text-align: left;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 120%;
+      left: 0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
 
+    .tooltip:hover .tooltip-content {
+      visibility: visible;
+    }
 
-    </style>
+    body.dark-mode .popup,
+    body.dark-mode .tooltip .tooltip-content {
+      background-color: #222;
+      color: #eee;
+      border: 1px solid #555;
+    }
+
+    body.light-mode .popup,
+    body.light-mode .tooltip .tooltip-content {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #aaa;
+    }
+  </style>
 </head>
 
 <body class="light-mode">
-    <header>
-        <div class="container header-container">
-            <div class="logo-container">
-                <img src="../../../images/logo.jpg" alt="Logo Grupo Parma" class="logo">
-                <h1>Grupo Parma</h1>
-                <p class="tagline">Estudos e Pesquisas</p>
+  <header>
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="../../../images/logo.jpg" alt="Logo Grupo Parma" class="logo" />
+        <h1>Grupo Parma</h1>
+        <p class="tagline">Estudos e Pesquisas</p>
+      </div>
+      <nav>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="../../noticias/paginadasnoticias/index.html">Notícias</a></li>
+          <li><a href="../../trabalhos/paginadostrabalhos/index.html">Trabalhos e Pesquisas</a></li>
+          <li><a href="../../divulgacoes/pagindasdivulgacoes/index.html">Divulgações</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article class="container article-content">
+      <div class="article-header">
+        <h1>Matriz BCG e Análise SWOT</h1>
+        <div class="article-meta">
+          <span><i class="far fa-calendar-alt"></i> 30 de maio de 2025</span>
+          <span>
+            <i class="fas fa-users"></i> Autores:&nbsp;
+            <div class="tooltip">
+              Ver autores
+              <div class="tooltip-content">
+                <a href="../../perfis/alana.html">Alana C</a><br />
+                <a href="../../perfis/alexander.html">Alexander D</a><br />
+                <a href="../../perfis/bianca.html">Bianca A</a><br />
+                <a href="../../perfis/ana.html">Ana Lívia M</a><br />
+                <a href="../../perfis/gustavo.html">Gustavo S</a><br />
+                <a href="../../perfis/gustavo.html">Letícia R</a>
+              </div>
             </div>
-            <nav>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="../../noticias/paginadasnoticias/index.html">Notícias</a></li>
-                    <li><a href="../../trabalhos/paginadostrabalhos/index.html">Trabalhos e Pesquisas</a></li>
-                    <li><a href="../../divulgacoes/pagindasdivulgacoes/index.html">Divulgações</a></li>
-                </ul>
-            </nav>
-            <button class="theme-toggle" aria-label="Alternar tema">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </button>
+          </span>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <article class="container article-content">
-            <div class="article-header">
-                <h1>Matriz BCG e Análise SWOT</h1>
-                <div class="article-meta">
-                    <span><i class="far fa-calendar-alt"></i> 30 de Maio, 2025</span>
-                           <span><i class="fas fa-users"></i> Autores:&nbsp;
-<div class="tooltip">
-  Ver autores
-  <div class="tooltip-content">
-    <a href="../../perfis/alana.html">Alana C</a><br>
-    <a href="../../perfis/alexander.html">Alexander D</a><br>
-    <a href="../../perfis/bianca.html">Bianca A</a><br>
-    <a href="../../perfis/ana.html">Ana Lívia M</a><br>
-    <a href="../../perfis/gustavo.html">Gustavo S</a><br>
-    <a href="../../perfis/gustavo.html">Letícia R</a>
-  </div>
-</div>
+      <!-- INÍCIO: Conteúdo do Artigo -->
 
-                    </span>
-                </div>
-            </div>
+      <h2>Análise SWOT</h2>
 
+      <h3>Conceito</h3>
+      <blockquote>
+        <p>
+          A SWOT é, essencialmente, um método de avaliação estratégica que auxilia na compreensão das FORÇAS (Strengths),
+          FRAQUEZAS (Weaknesses), OPORTUNIDADES (Opportunities) e AMEAÇAS (Threats) inerentes a uma empresa, empreendimento
+          ou cenário particular.
+        </p>
+      </blockquote>
 
-            <!-- INÍCIO: Conteúdo do Artigo (Edite conforme necessário) -->
+      <p>
+        <strong>S – Strengths (Forças):</strong> atributos internos benéficos que impulsionam o êxito.<br />
+        <strong>W – Weaknesses (Fraquezas):</strong> atributos internos desfavoráveis que podem prejudicar o desempenho.<br />
+        <strong>O – Opportunities (Oportunidades):</strong> fatores externos que podem ser utilizados para evoluir ou aprimorar.<br />
+        <strong>T – Threats (Ameaças):</strong> fatores externos que podem ocasionar perdas.
+      </p>
 
+      <h3>Exemplo</h3>
+      <p>Bar e Mercearia em frente à escola</p>
+      <div style="height: 20px;"></div>
 
+      <h4>Pontos Fortes (Strengths)</h4>
+      <ul>
+        <li>Localização estratégica em frente à escola, atraindo estudantes e professores.</li>
+        <li>Preços atrativos, especialmente em relação aos refrigerantes.</li>
+        <li>Clientela fixa, composta principalmente por adultos que frequentam o bar.</li>
+        <li>Venda direta no portão da escola, oferecendo praticidade, especialmente nos intervalos.</li>
+      </ul>
 
-            <h2>Analíse SWOT</h2>
+      <h4>Oportunidades (Opportunities)</h4>
+      <ul>
+        <li>Criação de combos promocionais (ex.: salgadinho com refrigerante) para atrair os alunos.</li>
+        <li>Contratação de um ajudante ou envolvimento de familiares nos horários de pico pode melhorar o atendimento.</li>
+        <li>Divulgação antecipada de promoções, por meio de cartazes ou WhatsApp, aumenta a visibilidade e o interesse dos clientes.</li>
+      </ul>
 
+      <h4>Ameaças (Threats)</h4>
+      <ul>
+        <li>Concorrência com uma padaria próxima, ainda que mais cara.</li>
+        <li>A cantina da escola oferece refeições gratuitas, reduzindo a demanda no bar.</li>
+        <li>Possibilidade de reclamações de pais ou da direção escolar devido à venda no portão.</li>
+        <li>Riscos legais ou fiscais associados à venda para menores ou funcionamento em área escolar.</li>
+      </ul>
 
+      <h2>Matriz BCG</h2>
 
-            <h3>Conceito</h3>
+      <h3>Conceito</h3>
+      <blockquote>
+        <p>
+          A Matriz BCG (Boston Consulting Group) é uma ferramenta estratégica de gestão que ajuda as empresas a analisar
+          seu portfólio de produtos ou unidades de negócio.
+        </p>
+      </blockquote>
 
-            <blockquote>
-            <p>A SWOT é essencialmente um método de avaliação estratégica, que auxilia na compreensão das FORÇAS (Strengths), FRAQUEZAS (Weaknesses), OPORTUNIDADES (Opportunities) e AMEAÇAS (Threats) inerentes a uma empresa, empreendimento ou cenário particular.</p>
-            </blockquote>
-            <p>S – Strengths (Forças): os atributos internos benéficos que impulsionam o êxito <br> W – Weaknesses (Fraquezas): os atributos internos desfavoráveis que podem prejudicar o rendimento. <br> O – Opportunities (Oportunidades): os fatores externos que podem ser utilizados para evoluir ou aprimorar. <br> T – Threats (Ameaças): os fatores externos que podem ocasionar perdas.</p>
-            
- 
+      <h3>Exemplo</h3>
+      <p>Coca-Cola</p>
+      <div style="height: 20px;"></div>
+      <p>
+        <strong>Estrelas:</strong> Coca-Cola Zero<br />
+        <strong>Vacas Leiteiras:</strong> Coca-Cola Tradicional<br />
+        <strong>Pontos de Interrogação:</strong> Bebidas energéticas<br />
+        <strong>Abacaxis:</strong> Sucos processados
+      </p>
+      <!-- FIM: Conteúdo do Artigo -->
+    </article>
+    <div style="height: 50px;"></div>
+  </main>
 
-            <h3>Exemplo</h3>
-
-            <p>Bar e Mercearia em frente à escola</p><div style="height: 20px;"></div>
-
-
-
-
-            <h4>Pontos Fortes (Strengths)</h4>
-
-            <li>
-                Localização estratégica em frente à escola, atraindo estudantes e professores.
-            </li>
-            <li>
-                Os preços são atrativos, especialmente em relação aos refrigerantes.
-            </li>
-            <li>
-                O estabelecimento possui uma clientela fixa, composta principalmente por adultos que frequentam o bar.
-            </li>
-            <li>
-                A venda direta no portão da escola oferece praticidade, atraindo especialmente os alunos nos intervalos.
-            </li>
-            <div style="height: 30px;"></div>
-
-
-
-            <h4>Oportunidades (Opportunities)</h4>
-
-            <li>
-                A criação de combos promocionais (ex.: salgadinho com refrigerante) pode aumentar as vendas e atrair os alunos.
-            </li>
-            <li>
-                A contratação de um ajudante ou o envolvimento de familiares nos horários de maior movimento pode melhorar significativamente o atendimento.
-            </li>
-            <li>
-                A divulgação antecipada de promoções, por meio de cartazes ou mensagens via WhatsApp, pode aumentar a visibilidade e o interesse dos clientes.
-            </li> <div style="height: 30px;"></div>
-
-
-            <h4>Ameaças (Threats)</h4>
-
-            <li>
-                A presença de uma padaria nas proximidades, apesar de mais cara, representa concorrência direta.
-            </li>
-            <li>
-                A cantina da escola, que oferece refeições gratuitas, reduz a demanda por produtos do bar e mercearia.
-            </li>
-            <li>
-                Existe o risco de reclamações por parte de pais ou da direção da escola, especialmente pela venda direta no portão.
-            </li>
-            <li>
-                Podem surgir problemas legais ou fiscais relacionados à venda para menores ou ao funcionamento do bar em área escolar.
-            </li> <div style="height: 30px;"></div>
-
-
-            <h2>Matriz BCG</h2>
-
-            <h3>Conceito</h3>
-
-            <blockquote>
-            <p> Boston Consulting Group: é uma ferramenta estratégica de gestão que ajuda as empresas a analisar seu portfólio de produtos ou unidades de negócio.</p>
-            </blockquote>
-                
-            <h3>Exemplo</h3>
-
-            <p>Coca-Cola</p><div style="height: 20px;"></div>
-
-            <p>Estrelas: Coca-Zero <br>Vacas Leiteiras: Coca-Cola tradicional <br>Pontos de Interrogação: Bebidas energéticas <br>Abacaxis: Sucos processados </p>
-
-            
-            <!-- FIM: Conteúdo do Artigo -->
-        </article>
-        <div style="height: 50px;"></div>
-    </main>
-
-    <script src="../../../js/script.js"></script>
+  <script src="../../../js/script.js"></script>
 </body>
 
 </html>
