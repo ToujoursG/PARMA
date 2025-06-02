@@ -16,6 +16,50 @@
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-content {
+            visibility: hidden;
+            width: 200px;
+            background-color: #eee;
+            color: #000;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 120%;
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip:hover .tooltip-content {
+            visibility: visible;
+        }
+
+        /* Estilo para modo escuro */
+body.dark-mode .popup,
+body.dark-mode .tooltip .tooltip-content {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* Modo claro opcional (se quiser explícito) */
+body.light-mode .popup,
+body.light-mode .tooltip .tooltip-content {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aaa;
+}
+
+
+    </style>
 
 </head>
 
