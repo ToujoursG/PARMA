@@ -15,6 +15,36 @@
         rel="stylesheet">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+        <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-content {
+            visibility: hidden;
+            width: 200px;
+            background-color: #eee;
+            color: #000;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 120%;
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip:hover .tooltip-content {
+            visibility: visible;
+        }
+    </style>
+
+    
 </head>
 
 <body class="light-mode">
@@ -70,14 +100,18 @@
                 <h3><a href="../trabalhosemsi/tramatrizbcgswot.html">Matriz BCG e Análise SWOT</a></h3>
                 <div class="research-meta">
                     <span><i class="fas fa-users"></i> Autores:&nbsp;
-<span class="news-author">
-    <a href="../../perfis/alana.html">Alana C</a>,&nbsp;
-    <a href="../../perfis/alexander.html">Alexander D</a>,&nbsp;
-    <a href="../../perfis/bianca.html">Bianca A</a>,<br>
-    <a href="../../perfis/ana.html">&nbsp;Ana Lívia M</a>,&nbsp;
-    <a href="../../perfis/gustavo.html">Gustavo S</a>,&nbsp;
-    <a href="../../perfis/gustavo.html">Letícia R</a>.
-</span>
+
+<div class="tooltip">
+  Ver autores
+  <div class="tooltip-content">
+    <a href="../../perfis/alana.html">Alana C</a>C<br>
+    <a href="../../perfis/alexander.html">Alexander D</a><br>
+    <a href="../../perfis/bianca.html">Bianca A</a><br>
+    <a href="../../perfis/ana.html">&nbsp;Ana Lívia M</a><br>
+    <a href="../../perfis/gustavo.html">Gustavo S</a><br>
+    <a href="../../perfis/gustavo.html">Letícia R</a>
+  </div>
+</div>
 
                     </span>
                     <span><i class="fas fa-calendar-alt"></i> Publicado: Março 2025</span>
