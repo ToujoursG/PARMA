@@ -1127,3 +1127,20 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+
+/* Estilo para modo escuro */
+body.dark-mode .popup,
+body.dark-mode .tooltip .tooltip-content {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* Modo claro opcional (se quiser explícito) */
+body.light-mode .popup,
+body.light-mode .tooltip .tooltip-content {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aaa;
+}
