@@ -260,7 +260,7 @@ nav {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background-color: linear-gradient(135deg, var(--color-hero), darken(var(--color-hero), 15%));
+    background-color: var(--color-hero);
     color: var(--color-text-light);
     padding: 5rem 0;
     text-align: center;
