@@ -26,6 +26,7 @@
     --color-card: #F5F5F5;
     --color-shadow: rgba(0, 0, 0, 0.1);
     --color-border: rgba(0, 0, 0, 0.08);
+    --color-hero: #6EA1B4;
     --transition-speed: 0.3s;
 }
 
@@ -41,6 +42,7 @@
     --color-card: #1a1c1c;
     --color-shadow: rgba(0, 0, 0, 0.3);
     --color-border: rgba(255, 255, 255, 0.1);
+    --color-hero: #DEAA34;
 }
 
 html {
@@ -258,7 +260,7 @@ nav {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, var(--color-primary), darken(var(--color-primary), 15%));
+    background-color: var(--color-hero);
     color: var(--color-text-light);
     padding: 5rem 0;
     text-align: center;
@@ -1127,6 +1129,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
-
-
