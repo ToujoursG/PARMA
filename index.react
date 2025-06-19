@@ -1,0 +1,117 @@
+"use client";
+import React from "react";
+import { Sidebar, SidebarBody, SidebarLink } from "@/coisas/sidebar.react";
+import { IconFile, IconClipboard, IconMegaphone } from "@tabler/icons-react";
+
+const links = [
+  {
+    label: "Notícias",
+    href: "/grupo-parma-site/pages/noticias/paginadasnoticias/index.html",
+    icon: <IconFile />,
+  },
+  {
+    label: "Trabalhos e Pesquisas",
+    href: "/grupo-parma-site/pages/trabalhos/paginadostrabalhos/index.html",
+    icon: <IconClipboard />,
+  },
+  {
+    label: "Divulgações",
+    href: "/grupo-parma-site/pages/divulgacoes/pagindasdivulgacoes/index.html",
+    icon: <IconMegaphone />,
+  },
+];
+
+export default function App() {
+  return (
+    <div className="flex min-h-screen">
+      <Sidebar>
+        <SidebarBody>
+          {links.map((link) => (
+            <SidebarLink key={link.href} link={link} />
+          ))}
+        </SidebarBody>
+      </Sidebar>
+
+      <main className="flex-1 p-6 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100">
+        <header className="mb-10">
+          <div className="flex items-center gap-4">
+            <img
+              src="/grupo-parma-site/images/logo.png"
+              alt="Logo Grupo Parma"
+              className="w-12 h-12"
+            />
+            <div>
+              <h1 className="text-2xl font-bold">Grupo Parma</h1>
+              <p className="text-sm">Estudos e Pesquisas</p>
+            </div>
+          </div>
+        </header>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-bold">BEM-VINDO!</h2>
+          <p className="text-md text-neutral-600 dark:text-neutral-300">Página Inicial do Grupo Parma</p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-lg font-semibold mb-4">Última atualização:</h2>
+          <div className="bg-neutral-100 dark:bg-neutral-800 p-4 rounded-lg">
+            <img
+              src="/grupo-parma-site/images/expo2025.jpeg"
+              alt="Expo 2025"
+              className="w-full rounded mb-3"
+            />
+            <span className="block text-sm text-neutral-600 mb-1">
+              <i className="far fa-calendar-alt"></i> 02 de Junho, 2025
+            </span>
+            <h3 className="font-semibold text-lg">
+              <a href="/grupo-parma-site/pages/noticias/noticiasemsi/notexpo2025.html">
+                Expo 2025 em Osaka: O Japão Revela ao Mundo sua Visão da Sociedade do Futuro
+              </a>
+            </h3>
+            <p className="text-sm mt-1">
+              Em meio a uma atmosfera de expectativa e inovação, Osaka abriu suas portas para o mundo no dia 13 de abril deste ano.
+            </p>
+            <div className="mt-2 text-sm text-neutral-600">
+              <span>
+                <i className="far fa-user"></i>{" "}
+                <a href="/grupo-parma-site/pages/perfis/alana.html">Alana</a>,{" "}
+                <a href="/grupo-parma-site/pages/perfis/gustavo.html">Gustavo S</a>
+              </span>
+              <br />
+              <a
+                className="text-blue-600 underline"
+                href="/grupo-parma-site/pages/noticias/noticiasemsi/notexpo2025.html"
+              >
+                Leia mais
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-lg font-semibold mb-4">Divulgação Fixada:</h2>
+          <div className="bg-yellow-50 dark:bg-yellow-900 p-4 rounded-lg">
+            <div className="mb-2 font-semibold text-lg">
+              <a href="/grupo-parma-site/pages/divulgacoes/divulgacoesemsi/evento1.html">Doe óleo usado!</a>
+            </div>
+            <p><i className="fas fa-map-marker-alt"></i> Etec de Araçatuba - Extensão Guararapes (SESI antigo)</p>
+            <p><i className="fas fa-clock"></i> 28 de julho a 28 de outubro</p>
+            <p><i className="fas fa-info-circle"></i> Nós, do Grupo PARMA, convidamos você a doar óleo usado e concorrer a uma BARCA DE SUSHI!</p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeaYhbBeDVkbmAtyAZmx2Hg-Q6dSj1lz96PzXnwjIwA7EwnDg/viewform?usp=dialog"
+              className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Inscreva-se
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <a className="text-blue-700 underline" href="/grupo-parma-site/pages/mais.html">
+            Mais sobre nós
+          </a>
+        </section>
+      </main>
+    </div>
+  );
+}
