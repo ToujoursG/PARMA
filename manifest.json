@@ -1,13 +1,17 @@
 {
-  "name": "GrupoParma",
+  "id": "/PARMA/",
+  "name": "SlidesParma",
   "short_name": "Parma",
-  "description": "Pagina oficial do GRUPO PARMA!",
+  "description": "Loja de apresentações e slides para estudantes e profissionais.",
   "start_url": "/PARMA/",
   "scope": "/PARMA/",
   "display": "standalone",
-  "background_color": "#ffffff",
   "theme_color": "#000000",
+  "background_color": "#ffffff",
   "orientation": "portrait",
+  "launch_handler": {
+    "client_mode": "auto"
+  },
   "icons": [
     {
       "src": "/PARMA/icons/icon-192.png",
