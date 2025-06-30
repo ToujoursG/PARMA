@@ -1,7 +1,7 @@
 {
-  "name": "SlidesParma",
+  "name": "GrupoParma",
   "short_name": "Parma",
-  "description": "Loja de apresentações e slides para estudantes e profissionais.",
+  "description": "Pagina oficial do GRUPO PARMA!",
   "start_url": "/PARMA/",
   "scope": "/PARMA/",
   "display": "standalone",
