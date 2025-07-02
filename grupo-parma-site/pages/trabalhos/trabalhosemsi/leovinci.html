@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../images/logo.png" />
+    <title>Grupo Parma - Leonardo Da Vinci</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <!-- Fontes Google - Playfair Display para títulos e Inter para textos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+        <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-content {
+            visibility: hidden;
+            width: 200px;
+            background-color: #eee;
+            color: #000;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 120%;
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip:hover .tooltip-content {
+            visibility: visible;
+        }
+
+        /* Estilo para modo escuro */
+body.dark-mode .popup,
+body.dark-mode .tooltip .tooltip-content {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* Modo claro opcional (se quiser explícito) */
+body.light-mode .popup,
+body.light-mode .tooltip .tooltip-content {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aaa;
+}
+
+
+    </style>
+
+    
+</head>
+
+<body class="light-mode">
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="../../../images/logo.png" alt="Logo Grupo Parma" class="logo">
+                <h1>Grupo Parma</h1>
+                <p class="tagline">Estudos e Pesquisas</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../../noticias/paginadasnoticias/index.html"><i class="fa-solid fa-file"></i>&nbsp; Notícias</a></li>
+                    <li><a href="../../trabalhos/paginadostrabalhos/index.html"><i class="fa-solid fa-clipboard"></i>&nbsp; Trabalhos e Pesquisas</a></li>
+                    <li><a href="../../divulgacoes/pagindasdivulgacoes/index.html"><i class="fa-solid fa-bullhorn"></i>&nbsp; Divulgações</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <article class="container article-content">
+            <div class="article-header">
+                <h1>Leonardo da Vinci</h1>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> 27 de Maio, 2025</span>
+                    <span><i class="fas fa-users"></i> Autores:&nbsp;
+                        <div class="tooltip">
+                            Ver autores
+                            <div class="tooltip-content">
+                                <a href=""></a>Alana C<br>
+                                Alexander D<br>
+                                Bianca A<br>
+                                Ana Lívia M<br>
+                                Gustavo S<br>
+                                Letícia R
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- INÍCIO: Conteúdo do Artigo (Edite conforme necessário) -->
+
+
+
+            <h2>Quem foi?</h2>
+
+            <p>Leonardo da Vinci foi um polímata do período do Renascimento. Era filho ilegítimo de um notário florentino e, desde cedo, demonstrou grande interesse pelas artes.</p>
+            <p> Foi um pintor italiano e um dos maiores gênios de seu tempo.</p>
+            <p>Teve diversos campos de estudo, como a matemática, engenharia e escultura. Leonardo da Vinci nasceu em uma pequena aldeia toscana próxima a Florença. Aos 16 anos, foi levado para Florença para trabalhar como aprendiz no ateliê do pintor Andrea del Verrocchio, onde iniciou sua carreira. Pintou algumas obras e trabalhou para figuras importantes, como o governador de Florença.</p>
+            <p>Aos 30 anos, mudou-se para Milão para trabalhar com Ludovico Sforza, o duque da cidade, um homem poderoso e rico. Para Sforza, Da Vinci trabalhou como pintor, mas também atuou como escultor e engenheiro. Nesse período, iniciou a obra A Última Ceia.</p>
+            <p>Em 1500, retornou a Florença e, a partir de 1502, passou a trabalhar diretamente para o filho do papa. Em 1503, começou a trabalhar em sua obra mais famosa: a Mona Lisa, que permaneceu com ele até sua morte, sem ter sido oficialmente finalizada.</p>
+            <p>Após esse período, Leonardo da Vinci se mudou diversas vezes (indo para Milão, Roma e Florença). Por fim, viveu na França a convite do rei Francisco I, onde faleceu em 1519, na cidade de Amboise.</p>
+
+
+
+            <h2>Obras</h2>
+
+            <h3>Mona Lisa</h3>
+            <p>Retrato de uma mulher com expressão serena e enigmática, considerada uma das pinturas mais famosas da história da arte.</p>
+
+            <h3>A ÚLTIMA CEIA</h3>
+            <p>Representa o momento em que Jesus anuncia que será traído. Está localizada em Milão, na parede do refeitório do convento de Santa Maria delle Grazie.</p>
+
+            <h3>DAMA COM ARMINHO</h3>
+            <p>Retrato uma jovem de Milão, segurando um arminho no colo, sendo uma das mais importantes representações femininas do Renascimento.</p>
+
+            <h3>HOMEM VITRUVIANO</h3>
+            <p>Desenho que representa as proporções ideais do corpo humano, combinando arte e a ciência um símbolo do Renascimento.</p>
+
+            <h2>Além das Obras</h2>
+            <p>Leonardo da Vinci foi um polímata italiano do Renascimento, conhecido por suas múltiplas habilidades e interesses. Ele era pintor, escultor, arquiteto, engenheiro, inventor, cientista, músico, poeta e muitos outros.</p>
+
+            <h2>Contribuição ao Renascimento</h2>
+            <blockquote>
+                <h3>Na Arte</h3>
+                <p>Da Vinci é conhecido por suas obras-primas, como "A Última Ceia" e "Mona Lisa". Ele introduziu técnicas inovadoras, como o sfumato, que cria transições suaves entre cores e tons.</p>
+            </blockquote>
+
+            <blockquote>
+                <h3>Ciência e Anatomia</h3>
+                <p>Leonardo tinha um profundo interesse pelo corpo humano, o que o levou a realizar dissecações para entender melhor a anatomia.</p>
+            </blockquote>
+
+
+            <blockquote>
+                <h3>Invenções e Engenharia</h3>
+                <p>Da Vinci projetou várias máquinas e invenções que estavam muito à frente de seu tempo, incluindo esboços de helicópteros, tanques e máquinas voadoras. Seu pensamento inovador inspirou futuros engenheiros e inventores.</p>
+            </blockquote>
+
+
+            <blockquote>
+                <h3>Interdisciplinaridade</h3>
+                <p>Leonardo exemplificou o ideal renascentista do "homo universalis", ou homem universal, combinando arte, ciência e tecnologia.</p>
+            </blockquote>
+
+
+            <blockquote>
+                <h3>Escrita e Filosofia</h3>
+                <p>Em seus cadernos, ele registrou não apenas desenhos e esboços, mas também reflexões sobre a natureza, arte e a condição humana. </p>
+            </blockquote>
+
+            <p>Através dessas contribuições, Leonardo da Vinci não apenas ajudou a moldar o Renascimento, mas também deixou um legado duradouro que continua a influenciar diversas áreas até hoje!</p>
+
+
+            <h2>Influencias na Arte Moderna </h2>
+            <p><strong>Sfumato:</strong> Leonardo aperfeiçoou essa técnica de transição suave entre as cores e tons. Que inspirou artistas modernos a explorar gradações sutis e atmosferas visuais complexas.</p>
+
+            <p><strong>Perspectiva e composição:</strong> Seus estudos da perspectiva e da composição geométrica influenciaram artistas a pensar o espaço pictórico mais estruturado e científico</p>
+
+
+            <p>Leonardo via a arte como uma forma de conhecimento — um modo de explorar e entender o mundo. Esse pensamento inspirou movimentos modernos que buscam unir ciência, filosofia e arte.</p>
+
+            <p>Seus desenhos anatômicos influenciaram gerações de artistas no estudo do corpo humano, tendo uma abordagem mais científica e realista. Artistas modernos continuaram essa tradição, mesmo ao distorcê-la ou reinterpretá-la (como em Picasso ou Egon Schiele).</p>
+
+            <p>Leonardo foi pintor, engenheiro, inventor, anatomista, músico... Essa visão renascentista e multidisciplinar ressurge na arte moderna e contemporânea com artistas que também exploram diversas mídias e áreas do conhecimento.</p>
+
+            <p>Ele era movido por uma curiosidade insaciável — algo essencial à arte moderna. Essa mentalidade experimental aparece nos movimentos vanguardistas do século XX, como o dadaísmo e o surrealismo, que também buscavam romper limites tradicionais da arte.</p>
+
+
+            <h2>Conclusão</h2>
+
+            <p>Leonardo da Vinci foi um dos maiores gênios da história, destacando-se como pintor, cientista, engenheiro, inventor e anatomista. Nascido em 1452, ele representou o ideal do homem renascentista, unindo arte e ciência em suas criações. Suas obras mais famosas são A Última Ceia e Mona Lisa, mas sua genialidade vai muito além da pintura.</p>
+
+            <p>Mesmo sem uma educação formal completa, Leonardo foi autodidata em diversas áreas. Ele estudou anatomia humana dissecando corpos, fez milhares de anotações com desenhos detalhados e escrevia de trás para frente, usando uma escrita espelhada. Seus cadernos mostram invenções muito à frente do seu tempo, como helicópteros, paraquedas e tanques de guerra — muitos dos quais só seriam construídos séculos depois.</p>
+
+            <p>Além de tudo isso, Leonardo era extremamente curioso e perfeccionista, o que o levava a abandonar várias obras inacabadas. A própria Mona Lisa foi levada por ele até sua morte, sendo constantemente retocada.</p>
+
+            <p>Leonardo da Vinci é lembrado até hoje como um símbolo da criatividade humana, da busca pelo conhecimento e da capacidade de unir arte e ciência de forma única.</p>
+
+
+
+
+
+
+            
+            <!-- FIM: Conteúdo do Artigo -->
+        </article>
+        <div style="height: 50px;"></div>
+    </main>
+
+    <script src="../../../js/script.js"></script>
+</body>
+
+</html>
